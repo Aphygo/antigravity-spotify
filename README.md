@@ -11,10 +11,10 @@
 [![Antigravity Plugin](https://img.shields.io/badge/Antigravity-Plugin%20v0.2-2563EB?style=flat-square)](plugin.json)
 [![Zero-Auth](https://img.shields.io/badge/Spotify-Zero--Auth-10B981?style=flat-square)](#highlights)
 [![Lyrics LRCLIB](https://img.shields.io/badge/Lyrics-LRCLIB%20Synced-0EA5E9?style=flat-square)](#cli--skill-quick-reference)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-0F172A?style=flat-square)](#1-command-installation)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-0F172A?style=flat-square)](#installation)
 [![License](https://img.shields.io/badge/License-Apache%202.0-334155?style=flat-square)](LICENSE)
 
-[Highlights](#highlights) · [How It Works](#how-it-works) · [1-Command Installation](#1-command-installation) · [CLI & Skill Reference](#cli--skill-quick-reference) · [Verification](#verified-evidence) · [Privacy](#privacy--permissions)
+[Highlights](#highlights) · [How It Works](#how-it-works) · [Installation](#installation) · [CLI & Skill Reference](#cli--skill-quick-reference) · [Verification](#verified-evidence) · [Privacy](#privacy--permissions)
 
 </div>
 
@@ -50,11 +50,11 @@ flowchart LR
 
 ---
 
-## 1-Command Installation
+## Installation
 
 Clone directly into Antigravity's global plugins directory (`~/.gemini/config/plugins/antigravity-spotify`) and run the platform installer:
 
-You need Git, Python 3, and the Spotify desktop app. Antigravity must be able to run `python3` from its environment for the playback hooks. On Windows, enable the `python3` command if your Python installation exposes only `python` or `py`.
+You need Git, Python 3, Google Antigravity, and the Spotify desktop app. On Linux, install `playerctl` for MPRIS playback detection. Antigravity must be able to run `python3` from its environment for the playback hooks. On Windows, enable the `python3` command if your Python installation exposes only `python` or `py`.
 
 ### Windows (PowerShell)
 
@@ -133,6 +133,7 @@ antigravity-spotify/
 
 - **Local Playback & Audio Capture:** Track detection and audio capture run on your machine. The plugin keeps the latest 10 clips under `~/.cache/antigravity-spotify/clips/` by default. When you ask Antigravity to read a clip, your agent and model settings govern how it is processed.
 - **Lyrics Lookups:** Online lookups send the artist and track title to LRCLIB, along with the album and duration when available.
+- **Conversation History.** When a track changes, the track information and current lyric line can become part of the Antigravity conversation history.
 - **Strict Offline Mode:** Set `ANTIGRAVITY_SPOTIFY_OFFLINE=1` to disable all outbound LRCLIB lyrics requests (disk cache only).
 - **Never Auto-Launches Spotify:** On macOS, `pgrep -x Spotify` runs before JXA so querying status never starts Spotify when it is closed.
 
