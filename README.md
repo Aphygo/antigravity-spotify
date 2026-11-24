@@ -54,6 +54,8 @@ flowchart LR
 
 Clone directly into Antigravity's global plugins directory (`~/.gemini/config/plugins/antigravity-spotify`) and run the platform installer:
 
+You need Git, Python 3, and the Spotify desktop app. Antigravity must be able to run `python3` from its environment for the playback hooks. On Windows, enable the `python3` command if your Python installation exposes only `python` or `py`.
+
 ### Windows (PowerShell)
 
 ```powershell
@@ -129,7 +131,8 @@ antigravity-spotify/
 
 ## Privacy & Permissions
 
-- **100% Local Playback & Audio:** Track detection and audio clip capture run strictly on your machine; clips are capped at the latest 10 recordings under `~/.cache/antigravity-spotify/clips/`.
+- **Local Playback & Audio Capture:** Track detection and audio capture run on your machine. The plugin keeps the latest 10 clips under `~/.cache/antigravity-spotify/clips/` by default. When you ask Antigravity to read a clip, your agent and model settings govern how it is processed.
+- **Lyrics Lookups:** Online lookups send the artist and track title to LRCLIB, along with the album and duration when available.
 - **Strict Offline Mode:** Set `ANTIGRAVITY_SPOTIFY_OFFLINE=1` to disable all outbound LRCLIB lyrics requests (disk cache only).
 - **Never Auto-Launches Spotify:** On macOS, `pgrep -x Spotify` runs before JXA so querying status never starts Spotify when it is closed.
 
