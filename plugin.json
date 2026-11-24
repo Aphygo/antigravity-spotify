@@ -1,0 +1,15 @@
+{
+  "name": "antigravity-spotify",
+  "displayName": "Antigravity Spotify (Now Playing, Lyrics & Ear)",
+  "version": "0.2.0",
+  "author": "Philip Cederman & Saga — Aphygo",
+  "description": "Zero-auth, cross-platform Spotify Now Playing, live synced LRCLIB lyrics, and multimodal audio-ear awareness for Antigravity agents.",
+  "logo": "assets/logo.svg",
+  "repository": "https://github.com/Aphygo/antigravity-spotify",
+  "suggestedPrompts": [
+    "Vad lyssnar jag på just nu i Spotify?",
+    "Vad sjunger de i låten just nu?",
+    "Lyssna på låten som spelas med egna öron!",
+    "Kör doctor på antigravity-spotify och kolla ljudenheter"
+  ]
+}

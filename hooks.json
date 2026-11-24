@@ -1,0 +1,19 @@
+{
+  "antigravity-spotify": {
+    "enabled": true,
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "python3 scripts/spotify_now.py hook --event session_start",
+        "timeout": 4
+      }
+    ],
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "python3 scripts/spotify_now.py hook --event pre_invocation",
+        "timeout": 4
+      }
+    ]
+  }
+}
