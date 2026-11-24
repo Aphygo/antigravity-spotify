@@ -2,9 +2,13 @@
   "name": "antigravity-spotify",
   "displayName": "Antigravity Spotify (Now Playing, Lyrics & Ear)",
   "version": "0.2.0",
-  "author": "Philip Cederman & Saga — Aphygo",
-  "description": "Zero-auth, cross-platform Spotify Now Playing, live synced LRCLIB lyrics, and multimodal audio-ear awareness for Antigravity agents.",
+  "description": "Zero-auth, cross-platform Spotify Now Playing awareness, live time-synced LRCLIB lyrics, and multimodal audio-ear capture (macOS CoreAudio Process Tap / BlackHole, Linux PulseAudio/PipeWire, Windows WASAPI) for Google Antigravity agents.",
   "logo": "assets/logo.svg",
+  "author": {
+    "name": "Aphygo",
+    "url": "https://github.com/Aphygo"
+  },
+  "homepage": "https://github.com/Aphygo/antigravity-spotify",
   "repository": "https://github.com/Aphygo/antigravity-spotify",
   "suggestedPrompts": [
     "Vad lyssnar jag på just nu i Spotify?",

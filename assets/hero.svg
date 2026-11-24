@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#090D16"/>
+      <stop offset="55%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#13263E"/>
+    </linearGradient>
+    <radialGradient id="duskGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(220 190) rotate(20) scale(380 230)">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mintGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(960 185) rotate(-15) scale(340 220)">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="waveGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6FE3B0"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0" y1="0" x2="1200" y2="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#334155" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.45"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#94A3B8" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Outer Card -->
+  <rect x="2" y="2" width="1196" height="376" rx="22" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="2"/>
+  <rect x="2" y="2" width="1196" height="376" rx="22" fill="url(#grid)"/>
+  <rect x="2" y="2" width="1196" height="376" rx="22" fill="url(#duskGlow)"/>
+  <rect x="2" y="2" width="1196" height="376" rx="22" fill="url(#mintGlow)"/>
+
+  <!-- Left Emblem -->
+  <g transform="translate(68, 126)">
+    <circle cx="64" cy="64" r="56" fill="#0F223D" stroke="#3B82F6" stroke-opacity="0.55" stroke-width="2"/>
+    <path d="M 32 48 Q 64 34 96 48" fill="none" stroke="url(#waveGrad)" stroke-width="7.5" stroke-linecap="round"/>
+    <path d="M 38 66 Q 64 55 90 66" fill="none" stroke="url(#waveGrad)" stroke-width="6.5" stroke-linecap="round" opacity="0.92"/>
+    <path d="M 45 83 Q 64 75 83 83" fill="none" stroke="url(#waveGrad)" stroke-width="5.5" stroke-linecap="round" opacity="0.82"/>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <g font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+    <rect x="228" y="96" width="144" height="28" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <text x="300" y="114" text-anchor="middle" fill="#6EE7B7" font-size="13" font-weight="600" letter-spacing="1.2">APHYGO PLUGIN v0.2.0</text>
+
+    <text x="228" y="176" fill="#F8FAFC" font-size="50" font-weight="700" letter-spacing="-0.8">Antigravity Spotify</text>
+    <text x="228" y="218" fill="#CBD5E1" font-size="20" font-weight="400">Zero-Auth Now Playing, Synced LRCLIB Lyrics &amp; Multimodal Audio Ear</text>
+
+    <!-- Feature Pills -->
+    <g transform="translate(228, 250)">
+      <rect x="0" y="0" width="136" height="34" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1.2"/>
+      <text x="68" y="22" text-anchor="middle" fill="#93C5FD" font-size="14" font-weight="600">Zero API Keys</text>
+
+      <rect x="150" y="0" width="144" height="34" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1.2"/>
+      <text x="222" y="22" text-anchor="middle" fill="#6EE7B7" font-size="14" font-weight="600">Synced Lyrics</text>
+
+      <rect x="308" y="0" width="244" height="34" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1.2"/>
+      <text x="430" y="22" text-anchor="middle" fill="#E2E8F0" font-size="14" font-weight="600">CoreAudio · MPRIS · WASAPI</text>
+    </g>
+  </g>
+
+  <!-- Right Acoustic Card Graphic -->
+  <g transform="translate(838, 86)">
+    <rect x="0" y="0" width="296" height="208" rx="16" fill="#0B1220" fill-opacity="0.88" stroke="#334155" stroke-width="1.2"/>
+    <circle cx="22" cy="22" r="5" fill="#10B981"/>
+    <text x="36" y="27" fill="#94A3B8" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" letter-spacing="0.8">LIVE EAR TELEMETRY</text>
+
+    <!-- Waveform bars -->
+    <g transform="translate(24, 58)">
+      <rect x="0" y="34" width="10" height="38" rx="5" fill="#3B82F6" opacity="0.7"/>
+      <rect x="18" y="22" width="10" height="62" rx="5" fill="#38BDF8" opacity="0.82"/>
+      <rect x="36" y="10" width="10" height="86" rx="5" fill="#6FE3B0"/>
+      <rect x="54" y="26" width="10" height="54" rx="5" fill="#34D399" opacity="0.9"/>
+      <rect x="72" y="4" width="10" height="98" rx="5" fill="#6FE3B0"/>
+      <rect x="90" y="18" width="10" height="70" rx="5" fill="#60A5FA"/>
+      <rect x="108" y="30" width="10" height="46" rx="5" fill="#3B82F6" opacity="0.8"/>
+      <rect x="126" y="12" width="10" height="82" rx="5" fill="#6FE3B0"/>
+      <rect x="144" y="24" width="10" height="58" rx="5" fill="#38BDF8"/>
+      <rect x="162" y="8" width="10" height="90" rx="5" fill="#6FE3B0"/>
+      <rect x="180" y="20" width="10" height="66" rx="5" fill="#34D399" opacity="0.9"/>
+      <rect x="198" y="32" width="10" height="42" rx="5" fill="#60A5FA" opacity="0.8"/>
+      <rect x="216" y="16" width="10" height="74" rx="5" fill="#6FE3B0"/>
+      <rect x="234" y="28" width="10" height="50" rx="5" fill="#38BDF8" opacity="0.75"/>
+    </g>
+
+    <text x="24" y="186" fill="#CBD5E1" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">RMS -15.3 dB · Crest 12.5 dB · MP3</text>
+  </g>
+</svg>
